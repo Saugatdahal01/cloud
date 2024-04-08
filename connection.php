@@ -1,13 +1,12 @@
 
-
 <?php
 //change mysqli_connect(host_name,username, password); 
 //$connection = mysqli_connect("zerowaste-rds.cxckq8ueksk6.us-east-1.rds.amazonaws.com:3306", "admin", "Panta1234");
 //$db = mysqli_select_db($connection, 'demo');
-$serverURL = "zerowaste-rds.cxckq8ueksk6.us-east-1.rds.amazonaws.com:3306";
+$serverURL = "zerohunger.c03uhohp3ztg.us-east-1.rds.amazonaws.com";
 $username = "admin";
-$password = "Panta1234";
-$database = "demo";
+$password = "Password0123";
+$database = "zerohunger";
 
 $connection = mysqli_connect($serverURL, $username, $password, $database);
 
