@@ -1,6 +1,6 @@
 <?php
 include 'connection.php';
-$connection=mysqli_connect("localhost:3306","root","12345");
+$connection=mysqli_connect("localhost","root","");
 $db=mysqli_select_db($connection,'demo');
 if(isset($_POST['sign']))
 {

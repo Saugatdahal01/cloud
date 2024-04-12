@@ -5,7 +5,7 @@ if($_SESSION['name']==''){
 }
 // include("login.php"); 
 $emailid= $_SESSION['email'];
-$connection=mysqli_connect("zerowaste-rds.cxckq8ueksk6.us-east-1.rds.amazonaws.com:3306","admin","Panta1234");
+$connection=mysqli_connect("localhost","root","");
 $db=mysqli_select_db($connection,'demo');
 if(isset($_POST['submit']))
 {
@@ -116,32 +116,8 @@ if(isset($_POST['submit']))
         <label for="district">District:</label>
 <select id="district" name="district" style="padding:10px;">
   <option value="Kathmandu">Kathmandu</option>
-  <option value="Pokhara">Pokhara</option>
-  <option value="Butwal">Butwal</option>
-  <option value="Chitwan">Chitwan</option>
-  <option value="Nuwakot">Nuwakot</option>
-  <option value="Palpa">Palpa</option>
-  <option value="Nepalgunj">Nepalgunj</option>
-  <option value="Surkhet">Surkhet</option>
-  <option value="Dhading">Dhading</option>
-  <option value="Illam">Illam</option>
-  <option value="Dharan">Dharan</option>
-  <option value="Morang">Morang</option>
-  <option value="Jhapa">Jhapa</option>
-  <option value="Birgunj">Birgunj</option>
-  <option value="Janakpur">Janakpur</option>
   <option value="Lalitpur">Lalitpur</option>
   <option value="Bhaktapur">Bhaktapur</option>
-  <option value="Bharatpur" selected>Bharatpur</option>
-  <option value="Dhangadhi">Dhangadhi</option>
-  <option value="Hetauda">Hetauda</option>
-  <option value="Itahari">Itahari</option>
-  <option value="Kritipur">Kritipur</option>
-  <option value="Lamjung">Lamjung</option>
-  <option value="Gorkha">Gorkha</option>
-  <option value="Baglung">Baglung</option>
-  <option value="Sidhupalchowk">Sidhupalchowk</option>
-  <option value="Sindhuli">Sindhuli</option>
 </select> 
 
         <label for="address" style="padding-left: 10px;">Address:</label>

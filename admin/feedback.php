@@ -26,8 +26,8 @@ if($_SESSION['name']==''){
     <title>Admin Dashboard Panel</title> 
     
 <?php
- $connection=mysqli_connect("localhost:3306","root","12345");
- $db=mysqli_select_db($connection,'demo');
+ $connection=mysqli_connect("zerohunger.c03uhohp3ztg.us-east-1.rds.amazonaws.com","admin","Password0123");
+ $db=mysqli_select_db($connection,'zerohunger');
  
 
 

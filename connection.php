@@ -7,6 +7,11 @@ $serverURL = "zerohunger.c03uhohp3ztg.us-east-1.rds.amazonaws.com";
 $username = "admin";
 $password = "Password0123";
 $database = "zerohunger";
+// $serverURL = "localhost:3306";
+// $username = "root";
+// $password = "";
+// $database = "demo";
+
 
 $connection = mysqli_connect($serverURL, $username, $password, $database);
 
@@ -15,6 +20,6 @@ if (!$connection)
     die("Error: Unable to connect. Error as here: ". mysqli_connect_error());
 }
 
-echo "connect Successfully";
+// echo "connect Successfully";
 
 ?>

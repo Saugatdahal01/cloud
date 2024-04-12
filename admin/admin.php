@@ -1,7 +1,7 @@
 
 <?php
 ob_start(); 
-// $connection = mysqli_connect("localhost:3307", "root", "");
+// $connection = mysqli_connect("localhost:3306", "root", "");
 // $db = mysqli_select_db($connection, 'demo');
  include("connect.php"); 
 if($_SESSION['name']==''){
@@ -26,8 +26,8 @@ if($_SESSION['name']==''){
     <title>Admin Dashboard Panel</title> 
     
 <?php
- $connection=mysqli_connect("localhost:3306","root","12345");
- $db=mysqli_select_db($connection,'demo');
+ $connection=mysqli_connect("zerohunger.c03uhohp3ztg.us-east-1.rds.amazonaws.com","admin","Password0123");
+ $db=mysqli_select_db($connection,'zerohunger');
  
 
 
@@ -47,7 +47,7 @@ if($_SESSION['name']==''){
             <ul class="nav-links">
                 <li><a href="#">
                     <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
+                    <span class="link-name">Dashboard</span>
                 </a></li>
                 <!-- <li><a href="#">
                     <i class="uil uil-files-landscapes"></i>
