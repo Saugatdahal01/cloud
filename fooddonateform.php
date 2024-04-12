@@ -5,8 +5,8 @@ if($_SESSION['name']==''){
 }
 // include("login.php"); 
 $emailid= $_SESSION['email'];
-$connection=mysqli_connect("localhost","root","");
-$db=mysqli_select_db($connection,'demo');
+$connection=mysqli_connect("zerohunger.c03uhohp3ztg.us-east-1.rds.amazonaws.com","admin","Password0123");
+$db=mysqli_select_db($connection,'zerohunger');
 if(isset($_POST['submit']))
 {
     $foodname=mysqli_real_escape_string($connection, $_POST['foodname']);
